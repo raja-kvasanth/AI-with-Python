@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn Python</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+  <header>
+    <img src="images/FullLogo-removebg-preview.png" alt="Logo" width="100px" height="100px">
+    <h1>Python Learning Platform</h1>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Curriculum</h2>
+      <ul>
+        <li class="sidebar-item" data-topic="intro">Introduction to Python</li>
+        <li class="sidebar-item" data-topic="syntax">Python Syntax</li>
+        <li class="sidebar-item" data-topic="variables">Variables and Data Types</li>
+        <li class="sidebar-item" data-topic="operators">Operators</li>
+        <li class="sidebar-item" data-topic="conditionals">Conditional Statements</li>
+        <li class="sidebar-item" data-topic="loops">Loops</li>
+        <li class="sidebar-item" data-topic="functions">Functions</li>
+        <li class="sidebar-item" data-topic="lists">Lists</li>
+        <li class="sidebar-item" data-topic="tuples">Tuples</li>
+        <li class="sidebar-item" data-topic="dictionaries">Dictionaries</li>
+        <li class="sidebar-item" data-topic="classes">Classes and Objects</li>
+        <li class="sidebar-item" data-topic="modules">Modules</li>
+      </ul>
+    </aside>
+
+    <main class="content">
+      <div class="topic-content" id="intro">
+        <h2>Introduction to Python</h2>
+        <p>Python is a high-level, interpreted programming language known for its simplicity and readability. Created by Guido van Rossum and first released in 1991, Python has become one of the most popular programming languages worldwide.</p>
+        <p>Key features of Python include:</p>
+        <ul>
+          <li>Easy-to-learn syntax that emphasizes readability</li>
+          <li>Support for multiple programming paradigms (object-oriented, functional, procedural)</li>
+          <li>Comprehensive standard library</li>
+          <li>Cross-platform compatibility</li>
+          <li>Large and active community</li>
+        </ul>
+        <div class="code-example">
+          <h3>Your First Python Program</h3>
+          <pre><code>print("Hello, World!")</code></pre>
+        </div>
+      </div>
+
+      <div class="topic-content" id="syntax" style="display:none;">
+        <h2>Python Syntax</h2>
+        <p>Python syntax is designed to be intuitive and easy to read. Unlike many other languages, Python uses indentation to define code blocks rather than curly braces or keywords.</p>
+        <p>Basic syntax rules:</p>
+        <ul>
+          <li>Statements end at the end of the line (no semicolons needed)</li>
+          <li>Code blocks are defined by indentation (typically 4 spaces)</li>
+          <li>Comments start with #</li>
+          <li>Variables are created when first assigned</li>
+        </ul>
+        <div class="code-example">
+          <h3>Syntax Example</h3>
+          <pre><code> # This is a comment
+x = 5  # Creating a variable</>
+if x > 0:
+    print("Positive number")
+else:
+    print("Non-positive number"</>)</code></pre>
+        </div>
+      </div>
+
+      <div class="topic-content" id="variables" style="display:none;">
+        <h2>Variables and Data Types</h2>
+        <p>Variables in Python are used to store data values. Unlike some other languages, Python is dynamically typed, meaning you don't need to declare variable types explicitly.</p>
+        <p>Basic data types in Python:</p>
+        <ul>
+          <li>Numbers: int, float, complex</li>
+          <li>Strings: str</li>
+          <li>Boolean: bool (True/False)</li>
+          <li>Sequences: list, tuple, range</li>
+          <li>Mappings: dict</li>
+          <li>Sets: set, frozenset</li>
+        </ul>
+        <div class="code-example">
+          <h3>Variables Example</h3>
+          <pre><code># Integer
+age = 25
+
+# Float
+price = 19.99
+
+# String
+name = "Alice"
+
+# Boolean
+is_active = True
+
+# List
+colors = ["red", "green", "blue"]
+
+# Dictionary
+person = {"name": "Bob", "age": 30}</code></pre>
+        </div>
+      </div>
+
+      <div class="topic-content" id="operators" style="display:none;">
+        <h2>Operators</h2>
+        <p>Python has various types of operators for performing operations on variables and values.</p>
+        <p>Operator categories:</p>
+        <ul>
+          <li>Arithmetic: +, -, *, /, %, **, //</li>
+          <li>Comparison: ==, !=, >, <, >=, <=</li>
+          <li>Logical: and, or, not</li>
+          <li>Assignment: =, +=, -=, *=, etc.</li>
+          <li>Identity: is, is not</li>
+          <li>Membership: in, not in</li>
+        </ul>
+        <div class="code-example">
+          <h3>Operators Example</h3>
+          <pre><code># Arithmetic
+x = 10 + 5  # 15
+y = 10 * 2  # 20
+
+# Comparison
+print(10 > 5)  # True
+
+# Logical
+if x > 0 and y > 0:
+    print("Both positive")
+
+# Membership
+colors = ["red", "green", "blue"]
+print("red" in colors)  # True</code></pre>
+        </div>
+      </div>
+
+      <div class="topic-content" id="conditionals" style="display:none;">
+        <h2>Conditional Statements</h2>
+        <p>Conditional statements allow you to execute different blocks of code based on certain conditions.</p>
+        <p>Types of conditional statements:</p>
+        <ul>
+          <li>if - executes code if condition is true</li>
+          <li>elif - checks another condition if previous conditions were false</li>
+          <li>else - executes code if all conditions are false</li>
+        </ul>
+        <div class="code-example">
+          <h3>Conditionals Example</h3>
+          <pre><code>age = 18
+
+if age < 13:
+    print("Child")
+elif age < 18:
+    print("Teenager")
+else:
+    print("Adult")
+
+# Ternary operator
+status = "Adult" if age >= 18 else "Minor"</code></pre>
+        </div>
+      </div>
+
+      <div class="topic-content" id="loops" style="display:none;">
+        <h2>Loops</h2>
+        <p>Loops allow you to execute a block of code repeatedly.</p>
+        <p>Types of loops in Python:</p>
+        <ul>
+          <li>for - iterates over a sequence</li>
+          <li>while - executes while condition is true</li>
+          <li>Loop control: break, continue, pass</li>
+        </ul>
+        <div class="code-example">
+          <h3>Loops Example</h3>
+          <pre><code># For loop
+for i in range(5):
+    print(i)  # Prints 0 to 4
+
+# While loop
+count = 0
+while count < 5:
+    print(count)
+    count += 1
+
+# Loop control
+for num in range(10):
+    if num == 5:
+        break  # Exit loop
+    if num % 2 == 0:
+        continue  # Skip even numbers
+    print(num)</code></pre>
+        </div>
+      </div>
+
+      <div class="topic-content" id="functions" style="display:none;">
+        <h2>Functions</h2>
+        <p>Functions are reusable blocks of code that perform a specific task. They help organize code and avoid repetition.</p>
+        <p>Key concepts:</p>
+        <ul>
+          <li>Defined with def keyword</li>
+          <li>Can accept parameters</li>
+          <li>Can return values using return</li>
+          <li>Can have default arguments</li>
+          <li>Support variable-length arguments (*args, **kwargs)</li>
+        </ul>
+        <div class="code-example">
+          <h3>Functions Example</h3>
+          <pre><code># Basic function
+def greet(name):
+    return f"Hello, {name}!"
+
+print(greet("Alice"))  # Hello, Alice!
+
+# Function with default argument
+def power(base, exponent=2):
+    return base ** exponent
+
+print(power(3))      # 9
+print(power(3, 3))   # 27
+
+# Variable-length arguments
+def sum_all(*numbers):
+    total = 0
+    for num in numbers:
+        total += num
+    return total
+
+print(sum_all(1, 2, 3))  # 6</code></pre>
+        </div>
+      </div>
+
+      <div class="topic-content" id="lists" style="display:none;">
+        <h2>Lists</h2>
+        <p>Lists are ordered, mutable collections of items. They are one of Python's most versatile data structures.</p>
+        <p>List characteristics:</p>
+        <ul>
+          <li>Created with square brackets []</li>
+          <li>Can contain items of different types</li>
+          <li>Support indexing and slicing</li>
+          <li>Many built-in methods: append(), remove(), sort(), etc.</li>
+        </ul>
+        <div class="code-example">
+          <h3>Lists Example</h3>
+          <pre><code># Creating a list
+fruits = ["apple", "banana", "cherry"]
+
+# Accessing elements
+print(fruits[0])   # apple
+print(fruits[-1])  # cherry (last element)
+
+# Slicing
+print(fruits[1:3])  # ['banana', 'cherry']
+
+# Modifying
+fruits.append("orange")
+fruits[1] = "blueberry"
+
+# List methods
+numbers = [3, 1, 4, 1, 5]
+numbers.sort()
+print(numbers)  # [1, 1, 3, 4, 5]
+
+# List comprehension
+squares = [x**2 for x in range(5)]
+print(squares)  # [0, 1, 4, 9, 16]</code></pre>
+        </div>
+      </div>
+
+      <div class="topic-content" id="tuples" style="display:none;">
+        <h2>Tuples</h2>
+        <p>Tuples are similar to lists but are immutable (cannot be changed after creation). They are often used for fixed collections of items.</p>
+        <p>Tuple characteristics:</p>
+        <ul>
+          <li>Created with parentheses ()</li>
+          <li>Immutable (cannot add, remove, or change items)</li>
+          <li>Faster than lists for fixed data</li>
+          <li>Can be used as dictionary keys (unlike lists)</li>
+        </ul>
+        <div class="code-example">
+          <h3>Tuples Example</h3>
+          <pre><code># Creating a tuple
+colors = ("red", "green", "blue")
+
+# Accessing elements
+print(colors[0])   # red
+print(colors[1:3]) # ('green', 'blue')
+
+# Tuple unpacking
+x, y, z = colors
+print(y)  # green
+
+# Single-element tuple (note the comma)
+single = (42,)
+
+# Tuple as dictionary key
+locations = {
+    (35.6895, 139.6917): "Tokyo",
+    (40.7128, -74.0060): "New York"
+}</code></pre>
+        </div>
+      </div>
+
+      <div class="topic-content" id="dictionaries" style="display:none;">
+        <h2>Dictionaries</h2>
+        <p>Dictionaries are unordered collections of key-value pairs. They are optimized for fast lookup of values based on keys.</p>
+        <p>Dictionary characteristics:</p>
+        <ul>
+          <li>Created with curly braces {}</li>
+          <li>Keys must be immutable (strings, numbers, tuples)</li>
+          <li>Values can be any type</li>
+          <li>No duplicate keys allowed</li>
+          <li>Many useful methods: keys(), values(), items(), etc.</li>
+        </ul>
+        <div class="code-example">
+          <h3>Dictionaries Example</h3>
+          <pre><code># Creating a dictionary
+person = {
+    "name": "Alice",
+    "age": 25,
+    "city": "New York"
+}
+
+# Accessing values
+print(person["name"])  # Alice
+print(person.get("age"))  # 25
+
+# Adding/modifying
+person["email"] = "alice@example.com"
+person["age"] = 26
+
+# Dictionary methods
+print(person.keys())   # dict_keys(['name', 'age', 'city', 'email'])
+print(person.values()) # dict_values(['Alice', 26, 'New York', 'alice@example.com'])
+
+# Dictionary comprehension
+squares = {x: x*x for x in range(5)}
+print(squares)  # {0: 0, 1: 1, 2: 4, 3: 9, 4: 16}</code></pre>
+        </div>
+      </div>
+
+      <div class="topic-content" id="classes" style="display:none;">
+        <h2>Classes and Objects</h2>
+        <p>Python is an object-oriented programming language. Classes are blueprints for creating objects, which bundle data and functionality together.</p>
+        <p>Key concepts:</p>
+        <ul>
+          <li>Defined with class keyword</li>
+          <li>__init__ method for initialization</li>
+          <li>self refers to the instance</li>
+          <li>Supports inheritance and polymorphism</li>
+          <li>Special methods (__str__, __len__, etc.)</li>
+        </ul>
+        <div class="code-example">
+          <h3>Classes Example</h3>
+          <pre><code># Simple class
+class Dog:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    
+    def bark(self):
+        return "Woof!"
+
+# Creating an object
+my_dog = Dog("Buddy", 3)
+print(my_dog.name)    # Buddy
+print(my_dog.bark())  # Woof!
+
+# Inheritance
+class Bulldog(Dog):
+    def __init__(self, name, age, weight):
+        super().__init__(name, age)
+        self.weight = weight
+    
+    def bark(self):
+        return "Woof! Woof!"
+
+bulldog = Bulldog("Max", 2, 25)
+print(bulldog.bark())  # Woof! Woof!</code></pre>
+        </div>
+      </div>
+
+      <div class="topic-content" id="modules" style="display:none;">
+        <h2>Modules</h2>
+        <p>Modules are Python files containing reusable code. They help organize code into logical units and promote code reuse.</p>
+        <p>Key concepts:</p>
+        <ul>
+          <li>Import modules using import</li>
+          <li>Access module contents with dot notation</li>
+          <li>Can import specific items with from...import</li>
+          <li>Standard library contains many useful modules</li>
+          <li>Can create your own modules</li>
+        </ul>
+        <div class="code-example">
+          <h3>Modules Example</h3>
+          <pre><code># Importing a module
+import math
+
+print(math.sqrt(16))  # 4.0
+
+# Importing specific functions
+from random import randint
+
+print(randint(1, 10))  # Random number between 1-10
+
+# Creating your own module
+# (Save this in mymodule.py)
+"""
+def greet(name):
+    return f"Hello, {name}!"
+
+PI = 3.14159
+"""
+
+# Then in another file:
+# import mymodule
+# print(mymodule.greet("Alice"))
+# print(mymodule.PI)</code></pre>
+        </div>
+      </div>
+      <iframe src="https://trinket.io/embed/python/5a2046f9ee" width="100%" height="250" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    </main>
+  </div>
+
+  <script src="JS/main.js"></script>
+</body>
+
+</html>
